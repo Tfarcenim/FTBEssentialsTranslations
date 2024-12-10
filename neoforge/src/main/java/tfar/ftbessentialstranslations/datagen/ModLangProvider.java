@@ -1,6 +1,7 @@
 package tfar.ftbessentialstranslations.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentContents;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.contents.TranslatableContents;
@@ -17,7 +18,10 @@ public class ModLangProvider extends LanguageProvider {
     protected void addTranslations() {
         addTextComponent(TranslationKeys.COMMAND_NICKNAME_TOO_LONG,"Nickname too long!");
         addTextComponent(TranslationKeys.COMMAND_NICKNAME_RESET,"Nickname reset!");
-        addTextComponent(TranslationKeys.COMMAND_NICKNAME_CHANGE,"Nickname changed to '" + "%s" + "'");
+        addTextComponent(TranslationKeys.nickNameChange(""),"Nickname changed to '" + "%s" + "'");
+
+        addTextComponent(TranslationKeys.notifyMuting(Component.empty(),Component.empty(),""),"%s has been muted by %s, %s");
+        addTextComponent(TranslationKeys.notifyMuting(Component.empty(),Component.empty(),""),"%s has been unmuted by %s");
     }
 
     protected void addTextComponent(MutableComponent component, String text) {

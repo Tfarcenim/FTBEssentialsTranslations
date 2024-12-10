@@ -1,6 +1,8 @@
 package tfar.ftbessentialstranslations.mixin;
 
+import com.llamalad7.mixinextras.sugar.Local;
 import dev.ftb.mods.ftbessentials.commands.impl.chat.NicknameCommand;
+import dev.ftb.mods.ftbessentials.util.FTBEPlayerData;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Debug;
 import org.spongepowered.asm.mixin.Mixin;
@@ -25,8 +27,8 @@ public class NicknameCommandMixin {
     }
 
     @ModifyArg(method = "lambda$nickname$2",at = @At(value = "INVOKE", target = FTBEssentialsTranslations.DISPLAY,ordinal = 1))
-    private static Component change(Component original) {
-        return TranslationKeys.COMMAND_NICKNAME_CHANGE;
+    private static Component change(Component original, @Local(argsOnly = true) FTBEPlayerData data) {
+        return TranslationKeys.nickNameChange(data.getNick());
     }
 
 }

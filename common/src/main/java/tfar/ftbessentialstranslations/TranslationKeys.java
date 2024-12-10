@@ -7,6 +7,18 @@ public class TranslationKeys {
 
     public static final MutableComponent COMMAND_NICKNAME_TOO_LONG = Component.translatable("ftbessentials.command.nickname.too_long");
     public static final MutableComponent COMMAND_NICKNAME_RESET = Component.translatable("ftbessentials.command.nickname.reset");
-    public static final MutableComponent COMMAND_NICKNAME_CHANGE = Component.translatable("ftbessentials.command.nickname.change");
+
+    public static MutableComponent nickNameChange(String nick) {
+        return Component.translatable("ftbessentials.command.nickname.change",nick);
+    }
+
+    //MutableComponent msg = player.getDisplayName().copy().append(" has been muted by ").append(source.getDisplayName()).append(", ").append(info.desc());
+    public static MutableComponent notifyMuting(Component displayName, Component name, String desc) {
+        return Component.translatable("ftbessentials.command.mute",displayName,name,desc);
+    }
+
+    public static MutableComponent notifyunMuting(Component displayName, Component name) {
+        return Component.translatable("ftbessentials.command.unmute",displayName,name);
+    }
 
 }
