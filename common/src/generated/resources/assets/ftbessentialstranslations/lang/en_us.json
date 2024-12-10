@@ -1,0 +1,5 @@
+{
+  "ftbessentials.command.nickname.change": "Nickname changed to '%s'",
+  "ftbessentials.command.nickname.reset": "Nickname reset!",
+  "ftbessentials.command.nickname.too_long": "Nickname too long!"
+}

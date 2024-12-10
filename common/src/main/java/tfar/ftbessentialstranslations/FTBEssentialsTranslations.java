@@ -9,7 +9,9 @@ import org.slf4j.LoggerFactory;
 // however it will be compatible with all supported mod loaders.
 public class FTBEssentialsTranslations {
 
-    public static final String MOD_ID = "ftbessentialsadditions";
+    public static final String DISPLAY = "Lnet/minecraft/server/level/ServerPlayer;displayClientMessage(Lnet/minecraft/network/chat/Component;Z)V";
+
+    public static final String MOD_ID = "ftbessentialstranslations";
     public static final String MOD_NAME = "FTBEssentialsTranslations";
     public static final Logger LOG = LoggerFactory.getLogger(MOD_NAME);
 
