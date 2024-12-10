@@ -1,6 +1,6 @@
-package tfar.ftbessentialsadditions.platform;
+package tfar.ftbessentialstranslations.platform;
 
-import tfar.ftbessentialsadditions.platform.services.IPlatformHelper;
+import tfar.ftbessentialstranslations.platform.services.IPlatformHelper;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLLoader;
 

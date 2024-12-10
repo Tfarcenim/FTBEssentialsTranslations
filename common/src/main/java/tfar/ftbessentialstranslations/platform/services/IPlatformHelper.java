@@ -1,4 +1,4 @@
-package tfar.ftbessentialsadditions.platform.services;
+package tfar.ftbessentialstranslations.platform.services;
 
 public interface IPlatformHelper {
 

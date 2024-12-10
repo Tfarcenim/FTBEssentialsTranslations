@@ -1,7 +1,7 @@
-package tfar.ftbessentialsadditions.platform;
+package tfar.ftbessentialstranslations.platform;
 
-import tfar.ftbessentialsadditions.FTBEssentialsAdditions;
-import tfar.ftbessentialsadditions.platform.services.IPlatformHelper;
+import tfar.ftbessentialstranslations.FTBEssentialsTranslations;
+import tfar.ftbessentialstranslations.platform.services.IPlatformHelper;
 
 import java.util.ServiceLoader;
 
@@ -24,7 +24,7 @@ public class Services {
         final T loadedService = ServiceLoader.load(clazz)
                 .findFirst()
                 .orElseThrow(() -> new NullPointerException("Failed to load service for " + clazz.getName()));
-        FTBEssentialsAdditions.LOG.debug("Loaded {} for service {}", loadedService, clazz);
+        FTBEssentialsTranslations.LOG.debug("Loaded {} for service {}", loadedService, clazz);
         return loadedService;
     }
 }

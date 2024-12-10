@@ -1,6 +1,6 @@
-package tfar.ftbessentialsadditions.platform;
+package tfar.ftbessentialstranslations.platform;
 
-import tfar.ftbessentialsadditions.platform.services.IPlatformHelper;
+import tfar.ftbessentialstranslations.platform.services.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;
 
 public class FabricPlatformHelper implements IPlatformHelper {

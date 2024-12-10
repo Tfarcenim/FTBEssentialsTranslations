@@ -1,4 +1,4 @@
-package tfar.ftbessentialsadditions;
+package tfar.ftbessentialstranslations;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -12,7 +12,7 @@ public class ExampleMod implements ModInitializer {
         // project.
 
         // Use Fabric to bootstrap the Common mod.
-        FTBEssentialsAdditions.LOG.info("Hello Fabric world!");
-        FTBEssentialsAdditions.init();
+        FTBEssentialsTranslations.LOG.info("Hello Fabric world!");
+        FTBEssentialsTranslations.init();
     }
 }
