@@ -1,5 +1,9 @@
 {
+  "ftbessentials.command.mute": "%s has been muted by %s, %s",
   "ftbessentials.command.nickname.change": "Nickname changed to '%s'",
   "ftbessentials.command.nickname.reset": "Nickname reset!",
-  "ftbessentials.command.nickname.too_long": "Nickname too long!"
+  "ftbessentials.command.nickname.too_long": "Nickname too long!",
+  "ftbessentials.command.nospeed": "No speed boost for %s (%s) = %s%",
+  "ftbessentials.command.speed": "Speed boost for %s (%s) = %s%",
+  "ftbessentials.command.unmute": "%s has been unmuted by %s"
 }

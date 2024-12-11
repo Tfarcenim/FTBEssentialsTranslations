@@ -21,4 +21,14 @@ public class TranslationKeys {
         return Component.translatable("ftbessentials.command.unmute",displayName,name);
     }
 
+    //            msg = Component.literal("Speed boost for ").append(target.getDisplayName()).append(" (")
+    //            .append(Component.translatable(((Attribute)attrInstance.getAttribute().value()).getDescriptionId())).append(") = " + boostPct + "%");
+    public static MutableComponent speedBoost(Component displayName,Component attrId,int boostPct) {
+        return Component.translatable("ftbessentials.command.speed",displayName,attrId,boostPct);
+    }
+
+    public static MutableComponent noSpeedBoost(Component displayName) {
+        return Component.translatable("ftbessentials.command.nospeed",displayName);
+    }
+
 }

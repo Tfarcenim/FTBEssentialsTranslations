@@ -21,7 +21,10 @@ public class ModLangProvider extends LanguageProvider {
         addTextComponent(TranslationKeys.nickNameChange(""),"Nickname changed to '" + "%s" + "'");
 
         addTextComponent(TranslationKeys.notifyMuting(Component.empty(),Component.empty(),""),"%s has been muted by %s, %s");
-        addTextComponent(TranslationKeys.notifyMuting(Component.empty(),Component.empty(),""),"%s has been unmuted by %s");
+        addTextComponent(TranslationKeys.notifyunMuting(Component.empty(),Component.empty()),"%s has been unmuted by %s");
+
+        addTextComponent(TranslationKeys.speedBoost(Component.empty(),Component.empty(),0),"Speed boost for %s (%s) = %s%");
+        addTextComponent(TranslationKeys.noSpeedBoost(Component.empty()),"No speed boost for %s (%s) = %s%");
     }
 
     protected void addTextComponent(MutableComponent component, String text) {

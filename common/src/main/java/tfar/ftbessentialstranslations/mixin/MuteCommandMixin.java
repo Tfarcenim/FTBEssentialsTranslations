@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import tfar.ftbessentialstranslations.TranslationKeys;
 
 @Mixin(MuteCommand.class)
-public interface MuteCommandMixin {
+public class MuteCommandMixin {
     @ModifyArg(method = "lambda$mute$4",at= @At(value = "INVOKE",
             target = "Ldev/ftb/mods/ftbessentials/commands/impl/chat/MuteCommand;notifyMuting(Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/network/chat/Component;)V"))
     private Component notifyMuting(Component o, @Local(argsOnly = true) ServerPlayer player, @Local(argsOnly = true) CommandSourceStack source, @Local DurationInfo info) {

@@ -6,7 +6,9 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "MuteCommandMixin",
-    "NicknameCommandMixin"
+    "NicknameCommandMixin",
+    "NicknameForCommandMixin",
+    "SpeedCommandMixin"
   ],
   "client": [
   ],
