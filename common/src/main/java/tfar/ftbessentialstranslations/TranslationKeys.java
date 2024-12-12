@@ -7,6 +7,7 @@ public class TranslationKeys {
 
     public static final MutableComponent COMMAND_NICKNAME_TOO_LONG = Component.translatable("ftbessentials.command.nickname.too_long");
     public static final MutableComponent COMMAND_NICKNAME_RESET = Component.translatable("ftbessentials.command.nickname.reset");
+    public static final MutableComponent COMMAND_LEADERBOARD_NODATA = Component.translatable("ftbessentials.command.leaderboard.nodata");
 
     public static MutableComponent nickNameChange(String nick) {
         return Component.translatable("ftbessentials.command.nickname.change",nick);
@@ -29,6 +30,10 @@ public class TranslationKeys {
 
     public static MutableComponent noSpeedBoost(Component displayName) {
         return Component.translatable("ftbessentials.command.nospeed",displayName);
+    }
+
+    public static MutableComponent leaderboardTitle(String formattedName) {
+        return Component.translatable("ftbessentials.command.leaderboard.title",formattedName);
     }
 
 }

@@ -1,4 +1,6 @@
 {
+  "ftbessentials.command.leaderboard.nodata": "No data!",
+  "ftbessentials.command.leaderboard.title": "== Leaderboard [%s] ==",
   "ftbessentials.command.mute": "%s has been muted by %s, %s",
   "ftbessentials.command.nickname.change": "Nickname changed to '%s'",
   "ftbessentials.command.nickname.reset": "Nickname reset!",

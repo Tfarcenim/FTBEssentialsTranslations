@@ -25,6 +25,9 @@ public class ModLangProvider extends LanguageProvider {
 
         addTextComponent(TranslationKeys.speedBoost(Component.empty(),Component.empty(),0),"Speed boost for %s (%s) = %s%");
         addTextComponent(TranslationKeys.noSpeedBoost(Component.empty()),"No speed boost for %s (%s) = %s%");
+
+        addTextComponent(TranslationKeys.leaderboardTitle(""), "== Leaderboard [%s] ==");
+        addTextComponent(TranslationKeys.COMMAND_LEADERBOARD_NODATA,"No data!");
     }
 
     protected void addTextComponent(MutableComponent component, String text) {
