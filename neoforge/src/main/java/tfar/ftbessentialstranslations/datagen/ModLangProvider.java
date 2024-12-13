@@ -5,9 +5,13 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentContents;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.contents.TranslatableContents;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import tfar.ftbessentialstranslations.FTBEssentialsTranslations;
 import tfar.ftbessentialstranslations.TranslationKeys;
+
+import java.util.UUID;
 
 public class ModLangProvider extends LanguageProvider {
     public ModLangProvider(PackOutput output) {
@@ -28,6 +32,18 @@ public class ModLangProvider extends LanguageProvider {
 
         addTextComponent(TranslationKeys.leaderboardTitle(""), "== Leaderboard [%s] ==");
         addTextComponent(TranslationKeys.COMMAND_LEADERBOARD_NODATA,"No data!");
+        addTextComponent(TranslationKeys.COMMAND_HOME_SET,"Home set!");
+        addTextComponent(TranslationKeys.COMMAND_HOME_TOO_MANY,"Can't add any more homes!");
+        addTextComponent(TranslationKeys.COMMAND_HOME_DELETED,"Home deleted!");
+        addTextComponent(TranslationKeys.COMMAND_HOME_NOT_FOUND,"Home not found!");
+        addTextComponent(TranslationKeys.homesFor(""), "Homes for %s\n---");
+        addTextComponent(TranslationKeys.CLICK_TO_TELEPORT,"Click to teleport");
+        addTextComponent(TranslationKeys.unknownPlayer(""),"Unknown player: %s");
+
+        addTextComponent(TranslationKeys.COMMAND_TP_OFFLINE_PLAYER_ONLINE,"Player is online! Use regular /tp command instead");
+        addTextComponent(TranslationKeys.offlineMove(UUID.randomUUID(), Vec3.ZERO, ResourceLocation.parse("s")),
+                "Offline player %s moved to [%s,%s,%s] in %s");
+        addTextComponent(TranslationKeys.cantUpdate(""),"Can't update dat file: %s");
     }
 
     protected void addTextComponent(MutableComponent component, String text) {
