@@ -2,9 +2,11 @@ package tfar.ftbessentialstranslations.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import dev.ftb.mods.ftbessentials.commands.impl.teleporting.OfflineTeleportCommand;
+import net.minecraft.client.Minecraft;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.arguments.coordinates.Coordinates;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.phys.Vec3;
 import org.spongepowered.asm.mixin.Mixin;
@@ -14,6 +16,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import tfar.ftbessentialstranslations.TranslationKeys;
 
+import java.io.IOException;
 import java.util.UUID;
 import java.util.function.Supplier;
 
@@ -52,7 +55,7 @@ public abstract class OfflineTeleportCommandMixin {
     @ModifyArg(method = "tpOffline(Lnet/minecraft/commands/CommandSourceStack;Ljava/util/UUID;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/commands/arguments/coordinates/Coordinates;)I"
             ,at = @At(value = "INVOKE", target = "Lnet/minecraft/commands/CommandSourceStack;sendFailure(Lnet/minecraft/network/chat/Component;)V",ordinal = 1)
     )
-    private Component error(Component o,@Local Exception e) {
+    private Component error(Component o, @Local IOException e) {
         return TranslationKeys.cantUpdate(e.getMessage());
     }
 

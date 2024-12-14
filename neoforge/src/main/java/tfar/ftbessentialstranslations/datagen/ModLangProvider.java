@@ -44,6 +44,11 @@ public class ModLangProvider extends LanguageProvider {
         addTextComponent(TranslationKeys.offlineMove(UUID.randomUUID(), Vec3.ZERO, ResourceLocation.parse("s")),
                 "Offline player %s moved to [%s,%s,%s] in %s");
         addTextComponent(TranslationKeys.cantUpdate(""),"Can't update dat file: %s");
+        addTextComponent(TranslationKeys.REQUEST_ALREADY_SENT,"Request already sent!");
+        addTextComponent(TranslationKeys.REQUEST_SENT,"Request sent!");
+        addTextComponent(TranslationKeys.REQUEST_INVALID,"Invalid request!");
+        addTextComponent(TranslationKeys.PLAYER_OFFLINE,"Player has gone offline!");
+        addTextComponent(TranslationKeys.REQUEST_DENIED,"Request denied!");
     }
 
     protected void addTextComponent(MutableComponent component, String text) {

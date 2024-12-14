@@ -17,5 +17,10 @@
   "ftbessentials.command.offline_tp.move": "Offline player %s moved to [%s,%s,%s] in %s",
   "ftbessentials.command.speed": "Speed boost for %s (%s) = %s%",
   "ftbessentials.command.tp_offline.player_online": "Player is online! Use regular /tp command instead",
+  "ftbessentials.command.tpa.player_offline": "Player has gone offline!",
+  "ftbessentials.command.tpa.request_already_sent": "Request already sent!",
+  "ftbessentials.command.tpa.request_denied": "Request denied!",
+  "ftbessentials.command.tpa.request_invalid": "Invalid request!",
+  "ftbessentials.command.tpa.request_sent": "Request sent!",
   "ftbessentials.command.unmute": "%s has been unmuted by %s"
 }

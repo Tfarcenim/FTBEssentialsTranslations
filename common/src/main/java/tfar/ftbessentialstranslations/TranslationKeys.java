@@ -22,6 +22,12 @@ public class TranslationKeys {
     public static final MutableComponent CLICK_TO_TELEPORT = Component.translatable("command.click_to_teleport");
     public static final MutableComponent COMMAND_TP_OFFLINE_PLAYER_ONLINE = Component.translatable("ftbessentials.command.tp_offline.player_online");
 
+    public static final MutableComponent REQUEST_ALREADY_SENT = Component.translatable("ftbessentials.command.tpa.request_already_sent");
+    public static final MutableComponent REQUEST_SENT = Component.translatable("ftbessentials.command.tpa.request_sent");
+    public static final MutableComponent REQUEST_INVALID = Component.translatable("ftbessentials.command.tpa.request_invalid");
+    public static final MutableComponent PLAYER_OFFLINE = Component.translatable("ftbessentials.command.tpa.player_offline");
+    public static final MutableComponent REQUEST_DENIED = Component.translatable("ftbessentials.command.tpa.request_denied");
+
     public static MutableComponent nickNameChange(String nick) {
         return Component.translatable("ftbessentials.command.nickname.change",nick);
     }

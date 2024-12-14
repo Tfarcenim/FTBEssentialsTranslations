@@ -11,7 +11,8 @@
     "NicknameCommandMixin",
     "NicknameForCommandMixin",
     "OfflineTeleportCommandMixin",
-    "SpeedCommandMixin"
+    "SpeedCommandMixin",
+    "TPACommandMixin"
   ],
   "client": [
   ],
