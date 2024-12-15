@@ -1,5 +1,6 @@
 package tfar.ftbessentialstranslations.datagen;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentContents;
@@ -49,6 +50,16 @@ public class ModLangProvider extends LanguageProvider {
         addTextComponent(TranslationKeys.REQUEST_INVALID,"Invalid request!");
         addTextComponent(TranslationKeys.PLAYER_OFFLINE,"Player has gone offline!");
         addTextComponent(TranslationKeys.REQUEST_DENIED,"Request denied!");
+        addTextComponent(TranslationKeys.tpaTitle(Component.empty(),Component.empty()),("TPA request! [ %s ➡ %s ]"));
+        addTextComponent(TranslationKeys.CLICK_ONE,"Click one of these: ");
+        addTextComponent(TranslationKeys.ACCEPT,"Accept ✔");
+        addTextComponent(TranslationKeys.DENY,"Deny ❌");
+        addTextComponent(TranslationKeys.CLICK_ACCEPT,"Click to Accept");
+        addTextComponent(TranslationKeys.CLICK_DENY,"Click to Deny");
+
+        addTextComponent(TranslationKeys.COMMAND_WARP_SET,"Warp set!");
+        addTextComponent(TranslationKeys.COMMAND_WARP_NOT_FOUND,"Warp deleted!");
+        addTextComponent(TranslationKeys.COMMAND_WARP_DELETED,"Warp not found!");
     }
 
     protected void addTextComponent(MutableComponent component, String text) {

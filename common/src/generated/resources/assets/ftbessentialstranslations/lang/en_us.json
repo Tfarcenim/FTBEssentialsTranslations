@@ -1,6 +1,9 @@
 {
   "command.click_to_teleport": "Click to teleport",
   "command.unknown_player": "Unknown player: %s",
+  "ftbessentials.accept": "Accept âœ”",
+  "ftbessentials.click_accept": "Click to Accept",
+  "ftbessentials.click_deny": "Click to Deny",
   "ftbessentials.command.home.deleted": "Home deleted!",
   "ftbessentials.command.home.home_set": "Home set!",
   "ftbessentials.command.home.list": "Homes for %s\n---",
@@ -22,5 +25,11 @@
   "ftbessentials.command.tpa.request_denied": "Request denied!",
   "ftbessentials.command.tpa.request_invalid": "Invalid request!",
   "ftbessentials.command.tpa.request_sent": "Request sent!",
-  "ftbessentials.command.unmute": "%s has been unmuted by %s"
+  "ftbessentials.command.tpa.title": "TPA request! [ %s âž¡ %s ]",
+  "ftbessentials.command.unmute": "%s has been unmuted by %s",
+  "ftbessentials.command.warp.deleted": "Warp not found!",
+  "ftbessentials.command.warp.not_found": "Warp deleted!",
+  "ftbessentials.command.warp.set": "Warp set!",
+  "ftbessentials.commannd.tpa.click_one": "Click one of these: ",
+  "ftbessentials.deny": "Deny â�Œ"
 }

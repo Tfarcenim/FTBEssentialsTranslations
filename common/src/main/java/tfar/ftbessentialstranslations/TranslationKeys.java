@@ -28,6 +28,17 @@ public class TranslationKeys {
     public static final MutableComponent PLAYER_OFFLINE = Component.translatable("ftbessentials.command.tpa.player_offline");
     public static final MutableComponent REQUEST_DENIED = Component.translatable("ftbessentials.command.tpa.request_denied");
 
+    public static final MutableComponent CLICK_ONE = Component.translatable("ftbessentials.commannd.tpa.click_one");
+    public static final MutableComponent ACCEPT = Component.translatable("ftbessentials.accept");
+    public static final MutableComponent DENY = Component.translatable("ftbessentials.deny");
+
+    public static final MutableComponent CLICK_ACCEPT = Component.translatable("ftbessentials.click_accept");
+    public static final MutableComponent CLICK_DENY = Component.translatable("ftbessentials.click_deny");
+
+    public static final MutableComponent COMMAND_WARP_SET =  Component.translatable("ftbessentials.command.warp.set");
+    public static final MutableComponent COMMAND_WARP_DELETED =  Component.translatable("ftbessentials.command.warp.deleted");
+    public static final MutableComponent COMMAND_WARP_NOT_FOUND =  Component.translatable("ftbessentials.command.warp.not_found");
+
     public static MutableComponent nickNameChange(String nick) {
         return Component.translatable("ftbessentials.command.nickname.change",nick);
     }
@@ -73,6 +84,10 @@ public class TranslationKeys {
 
     public static MutableComponent cantUpdate(String message) {
         return Component.translatable("ftbessentials.command.offline_tp.cant_update",message);
+    }
+
+    public static MutableComponent tpaTitle(Component name,Component target) {
+        return Component.translatable("ftbessentials.command.tpa.title",name,target);
     }
 
 }
