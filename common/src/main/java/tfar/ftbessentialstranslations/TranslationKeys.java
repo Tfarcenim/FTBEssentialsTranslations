@@ -39,6 +39,12 @@ public class TranslationKeys {
     public static final MutableComponent COMMAND_WARP_DELETED =  Component.translatable("ftbessentials.command.warp.deleted");
     public static final MutableComponent COMMAND_WARP_NOT_FOUND =  Component.translatable("ftbessentials.command.warp.not_found");
 
+    public static final MutableComponent KIT_NAME = Component.translatable("ftbessentials.command.kit.name");
+    public static final MutableComponent KIT_COOLDOWN = Component.translatable("ftbessentials.command.kit.cooldown");
+    public static final MutableComponent NO_KIT_COOLDOWN = Component.translatable("ftbessentials.command.kit.no_cooldown");
+    public static final MutableComponent KIT_ONE_TIME_USE = Component.translatable("ftbessentials.command.kit.one_time_use");
+    public static final MutableComponent KIT_AUTO_GRANT = Component.translatable("ftbessentials.command.kit.auto_grant");
+
     public static MutableComponent nickNameChange(String nick) {
         return Component.translatable("ftbessentials.command.nickname.change",nick);
     }
@@ -90,4 +96,36 @@ public class TranslationKeys {
         return Component.translatable("ftbessentials.command.tpa.title",name,target);
     }
 
+    public static MutableComponent addKitToBlock(String name) {
+        return Component.translatable("ftbessentials.command.kit.add_to_block",name);
+    }
+
+    public static MutableComponent cantStore(String message) {
+        return Component.translatable("ftbessentials.command.kit.cant_store",message);
+    }
+
+    public static MutableComponent cantCreateKit(String message) {
+        return Component.translatable("ftbessentials.command.kit.cant_create",message);
+    }
+
+    public static MutableComponent createKit(String message) {
+        return Component.translatable("ftbessentials.command.kit.create",message);
+    }
+
+    public static MutableComponent cantGiveKit(String message) {
+        return Component.translatable("ftbessentials.command.kit.cant_give",message);
+    }
+
+    public static MutableComponent giveKitMultiple(String name,int players) {
+        return Component.translatable("ftbessentials.command.kit.give_kit_multiple",name,players);
+    }
+
+
+    public static MutableComponent listKits(int kits) {
+        return Component.translatable("ftbessentials.command.kit.list_kits",kits);
+    }
+
+    public static MutableComponent noKit(String name) {
+        return Component.translatable("ftbessentials.command.kit.no_kit",name);
+    }
 }

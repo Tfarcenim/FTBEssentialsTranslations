@@ -1,6 +1,5 @@
 package tfar.ftbessentialstranslations.datagen;
 
-import net.minecraft.ChatFormatting;
 import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentContents;
@@ -60,6 +59,20 @@ public class ModLangProvider extends LanguageProvider {
         addTextComponent(TranslationKeys.COMMAND_WARP_SET,"Warp set!");
         addTextComponent(TranslationKeys.COMMAND_WARP_NOT_FOUND,"Warp deleted!");
         addTextComponent(TranslationKeys.COMMAND_WARP_DELETED,"Warp not found!");
+        addTextComponent(TranslationKeys.addKitToBlock(""), "Added item(s) from kit '%s' to focused inventory");
+        addTextComponent(TranslationKeys.cantStore(""),"Can't store kit in inventory: %s");
+        addTextComponent(TranslationKeys.cantCreateKit(""),"Can't create kit: %s");
+        addTextComponent(TranslationKeys.createKit(""), "Kit '%s' created");
+        addTextComponent(TranslationKeys.cantGiveKit(""),"Can't give kit to player: %s");
+        addTextComponent(TranslationKeys.giveKitMultiple("",0), "Kit '%s' given to %s player(s)");
+        addTextComponent(TranslationKeys.listKits(0),"%s kit(s)");
+
+        addTextComponent(TranslationKeys.noKit(""),"No such kit: %s");
+        addTextComponent(TranslationKeys.KIT_NAME,"Kit name: ");
+        addTextComponent(TranslationKeys.KIT_COOLDOWN,"Kit name: ");
+        addTextComponent(TranslationKeys.NO_KIT_COOLDOWN,"Kit name: ");
+        addTextComponent(TranslationKeys.KIT_ONE_TIME_USE,"  One-Time Use");
+        addTextComponent(TranslationKeys.KIT_AUTO_GRANT,"  Autogranted on player login");
     }
 
     protected void addTextComponent(MutableComponent component, String text) {
