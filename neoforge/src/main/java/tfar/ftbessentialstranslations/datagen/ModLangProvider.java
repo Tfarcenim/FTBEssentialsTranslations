@@ -81,6 +81,11 @@ public class ModLangProvider extends LanguageProvider {
         addTextComponent(TranslationKeys.resetCooldownAll(""), "Cooldown for '%s' reset for all players");
         addTextComponent(TranslationKeys.unknownPlayerID(UUID.randomUUID()),"Unknown player ID: %s");
         addTextComponent(TranslationKeys.resetCooldownPlayer("",UUID.randomUUID()), "Cooldown for '%s' reset for UUID %s");
+        addTextComponent(TranslationKeys.COMMAND_CHEAT_NO_ENDER_CHEST,"Unable to open enderchest inventory!");
+        addTextComponent(TranslationKeys.COMMAND_FLY_ENABLED,"Flight enabled");
+        addTextComponent(TranslationKeys.COMMAND_FLY_DISABLED,"Flight disabled");
+        addTextComponent(TranslationKeys.COMMAND_GOD_ENABLED,"God mode enabled");
+        addTextComponent(TranslationKeys.COMMAND_GOD_DISABLED,"God mode disabled");
     }
 
     protected void addTextComponent(MutableComponent component, String text) {

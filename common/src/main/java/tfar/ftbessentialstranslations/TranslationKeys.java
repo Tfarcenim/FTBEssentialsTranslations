@@ -45,6 +45,13 @@ public class TranslationKeys {
     public static final MutableComponent KIT_ONE_TIME_USE = Component.translatable("ftbessentials.command.kit.one_time_use");
     public static final MutableComponent KIT_AUTO_GRANT = Component.translatable("ftbessentials.command.kit.auto_grant");
 
+    public static final MutableComponent COMMAND_CHEAT_NO_ENDER_CHEST = Component.translatable("ftbessentials.command.cheat.no_ender_chest");
+    public static final MutableComponent COMMAND_FLY_ENABLED = Component.translatable("ftbessentials.command.cheat.fly.enabled");
+    public static final MutableComponent COMMAND_FLY_DISABLED = Component.translatable("ftbessentials.command.cheat.fly.disabled");
+
+    public static final MutableComponent COMMAND_GOD_ENABLED = Component.translatable("ftbessentials.command.cheat.god.enabled");
+    public static final MutableComponent COMMAND_GOD_DISABLED = Component.translatable("ftbessentials.command.cheat.god.disabled");
+
     public static MutableComponent nickNameChange(String nick) {
         return Component.translatable("ftbessentials.command.nickname.change",nick);
     }
@@ -159,6 +166,10 @@ public class TranslationKeys {
 
     public static MutableComponent resetCooldownPlayer(String kitName,UUID playerID) {
         return Component.translatable("ftbessentials.command.kit.reset_cooldown_player",kitName,playerID.toString());
+    }
+
+    public static MutableComponent flight(boolean enabled) {
+        return enabled ? COMMAND_FLY_ENABLED : COMMAND_FLY_DISABLED;
     }
 
 }
