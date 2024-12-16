@@ -68,11 +68,19 @@ public class ModLangProvider extends LanguageProvider {
         addTextComponent(TranslationKeys.listKits(0),"%s kit(s)");
 
         addTextComponent(TranslationKeys.noKit(""),"No such kit: %s");
+        addTextComponent(TranslationKeys.unknownKit(""),"Unknown kit: %s");
         addTextComponent(TranslationKeys.KIT_NAME,"Kit name: ");
-        addTextComponent(TranslationKeys.KIT_COOLDOWN,"Kit name: ");
-        addTextComponent(TranslationKeys.NO_KIT_COOLDOWN,"Kit name: ");
-        addTextComponent(TranslationKeys.KIT_ONE_TIME_USE,"  One-Time Use");
+        addTextComponent(TranslationKeys.KIT_COOLDOWN,"Cooldown: ");
+        addTextComponent(TranslationKeys.NO_KIT_COOLDOWN,"No Cooldown: ");
+        addTextComponent(TranslationKeys.KIT_ONE_TIME_USE,"One-Time Use");//had 2 spaces
         addTextComponent(TranslationKeys.KIT_AUTO_GRANT,"  Autogranted on player login");
+        addTextComponent(TranslationKeys.kitDeleted(""), "Kit '%s' deleted");
+        addTextComponent(TranslationKeys.cantDelete("",""), "Can't delete kit '%s': %s");
+        addTextComponent(TranslationKeys.autoGrantModify("",false), "Kit '%s' autogrant modified: %s");
+        addTextComponent(TranslationKeys.cooldownModify("",Component.empty()), "Kit '%s' cooldown modified: %s");
+        addTextComponent(TranslationKeys.resetCooldownAll(""), "Cooldown for '%s' reset for all players");
+        addTextComponent(TranslationKeys.unknownPlayerID(UUID.randomUUID()),"Unknown player ID: %s");
+        addTextComponent(TranslationKeys.resetCooldownPlayer("",UUID.randomUUID()), "Cooldown for '%s' reset for UUID %s");
     }
 
     protected void addTextComponent(MutableComponent component, String text) {

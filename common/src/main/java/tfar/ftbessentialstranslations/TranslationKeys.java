@@ -128,4 +128,37 @@ public class TranslationKeys {
     public static MutableComponent noKit(String name) {
         return Component.translatable("ftbessentials.command.kit.no_kit",name);
     }
+
+    public static MutableComponent unknownKit(String name) {
+        return Component.translatable("ftbessentials.command.kit.unknown_kit",name);
+    }
+
+    public static MutableComponent kitDeleted(String name) {
+        return Component.translatable("ftbessentials.command.kit.deleted",name);
+    }
+
+    public static MutableComponent cantDelete(String name,String message) {
+        return Component.translatable("ftbessentials.command.kit.cant_delete",name,message);
+    }
+
+    public static MutableComponent autoGrantModify(String name,boolean auto) {
+        return Component.translatable("ftbessentials.command.kit.auto_grant_modify",name,auto);
+    }
+
+    public static MutableComponent cooldownModify(String name,Component time) {
+        return Component.translatable("ftbessentials.command.kit.cooldown_modify",name,time);
+    }
+
+    public static MutableComponent resetCooldownAll(String name) {
+        return Component.translatable("ftbessentials.command.kit.reset_cooldown_all",name);
+    }
+
+    public static MutableComponent unknownPlayerID(UUID uuid) {
+        return Component.translatable("ftbessentials.command.kit.unknown_player_id",uuid.toString());
+    }
+
+    public static MutableComponent resetCooldownPlayer(String kitName,UUID playerID) {
+        return Component.translatable("ftbessentials.command.kit.reset_cooldown_player",kitName,playerID.toString());
+    }
+
 }
