@@ -17,7 +17,7 @@ import tfar.ftbessentialstranslations.TranslationKeys;
 import java.util.List;
 
 @Mixin(HomeCommand.class)
-@Debug(export = true)
+//@Debug(export = true)
 public abstract class HomeCommandMixin {
 
     @Shadow public abstract List<LiteralArgumentBuilder<CommandSourceStack>> register();

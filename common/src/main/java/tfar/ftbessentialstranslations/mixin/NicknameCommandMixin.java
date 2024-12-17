@@ -12,7 +12,7 @@ import tfar.ftbessentialstranslations.FTBEssentialsTranslations;
 import tfar.ftbessentialstranslations.TranslationKeys;
 
 @Mixin(NicknameCommand.class)
-@Debug(export = true)
+//@Debug(export = true)
 public class NicknameCommandMixin {
 
     @ModifyArg(method = "nickname",at = @At(value = "INVOKE", target = FTBEssentialsTranslations.DISPLAY))

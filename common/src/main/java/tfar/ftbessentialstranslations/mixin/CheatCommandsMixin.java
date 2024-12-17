@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import tfar.ftbessentialstranslations.TranslationKeys;
 
 @Mixin(CheatCommands.class)
-public class ChestCommandsMixin {
+public class CheatCommandsMixin {
 
     @ModifyArg(method = "enderChest",at = @At(value = "INVOKE", target = "Lnet/minecraft/commands/CommandSourceStack;sendFailure(Lnet/minecraft/network/chat/Component;)V"))
     private static Component enderChestFail(Component o) {

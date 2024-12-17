@@ -1,5 +1,6 @@
 package tfar.ftbessentialstranslations.datagen;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentContents;
@@ -86,6 +87,14 @@ public class ModLangProvider extends LanguageProvider {
         addTextComponent(TranslationKeys.COMMAND_FLY_DISABLED,"Flight disabled");
         addTextComponent(TranslationKeys.COMMAND_GOD_ENABLED,"God mode enabled");
         addTextComponent(TranslationKeys.COMMAND_GOD_DISABLED,"God mode disabled");
+
+        addTextComponent(TranslationKeys.COMMAND_TELEPORT_HISTORY,"Teleportation history is empty!");
+        addTextComponent(TranslationKeys.COMMAND_RTP_DENIED,"You may not use /rtp in this dimension!");
+        addTextComponent(TranslationKeys.COMMAND_RTP_LOOKING,"Looking for random location...");
+        addTextComponent(TranslationKeys.COMMAND_RTP_COULDNT_FIND,"Could not find a valid location to teleport to!");
+        addTextComponent(TranslationKeys.foundGoodLocation1(BlockPos.ZERO),"Found good location after 1 attempt @ [x %s, z %s]");//%d or %s?
+        addTextComponent(TranslationKeys.foundGoodLocationMany(0,BlockPos.ZERO),"Found good location after %s attempts @ [x %s, z %s]");//%d or %s?
+        addTextComponent(TranslationKeys.cantJump(""),"Can't jump: %s");
     }
 
     protected void addTextComponent(MutableComponent component, String text) {

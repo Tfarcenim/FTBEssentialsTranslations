@@ -1,5 +1,6 @@
 package tfar.ftbessentialstranslations;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
@@ -51,6 +52,10 @@ public class TranslationKeys {
 
     public static final MutableComponent COMMAND_GOD_ENABLED = Component.translatable("ftbessentials.command.cheat.god.enabled");
     public static final MutableComponent COMMAND_GOD_DISABLED = Component.translatable("ftbessentials.command.cheat.god.disabled");
+    public static final MutableComponent COMMAND_TELEPORT_HISTORY = Component.translatable("ftbessentials.command.teleport.history");
+    public static final MutableComponent COMMAND_RTP_DENIED = Component.translatable("ftbessentials.command.rtp.denied");
+    public static final MutableComponent COMMAND_RTP_LOOKING = Component.translatable("ftbessentials.command.rtp.looking");
+    public static final MutableComponent COMMAND_RTP_COULDNT_FIND = Component.translatable("ftbessentials.command.rtp.couldnt_find");
 
     public static MutableComponent nickNameChange(String nick) {
         return Component.translatable("ftbessentials.command.nickname.change",nick);
@@ -168,8 +173,21 @@ public class TranslationKeys {
         return Component.translatable("ftbessentials.command.kit.reset_cooldown_player",kitName,playerID.toString());
     }
 
-    public static MutableComponent flight(boolean enabled) {
-        return enabled ? COMMAND_FLY_ENABLED : COMMAND_FLY_DISABLED;
+    //String.format("Found good location after %d " + (attempt == 1 ? "attempt" : "attempts") + " @ [x %d, z %d]", attempt, goodPos.getX(), goodPos.getZ()))
+    public static MutableComponent foundGoodLocation(int attempts, BlockPos goodPos) {
+        return attempts > 1 ? foundGoodLocationMany(attempts,goodPos) : foundGoodLocation1(goodPos);
+    }
+
+    public static MutableComponent foundGoodLocation1(BlockPos goodPos) {
+        return Component.translatable("ftbessentials.command.rtp.found_location_one_attempt",goodPos.getX(),goodPos.getZ());
+    }
+
+    public static MutableComponent foundGoodLocationMany(int attempts, BlockPos goodPos) {
+        return Component.translatable("ftbessentials.command.rtp.found_location_many_attempts",attempts,goodPos.getX(),goodPos.getZ());
+    }
+
+    public static MutableComponent cantJump(String message) {
+        return Component.translatable("ftbessentials.command.rtp.cant_jump",message);
     }
 
 }
