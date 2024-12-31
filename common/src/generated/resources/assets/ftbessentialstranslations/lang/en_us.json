@@ -1,5 +1,6 @@
 {
   "command.click_to_teleport": "Click to teleport",
+  "command.none": "None",
   "command.unknown_player": "Unknown player: %s",
   "ftbessentials.accept": "Accept âœ”",
   "ftbessentials.click_accept": "Click to Accept",

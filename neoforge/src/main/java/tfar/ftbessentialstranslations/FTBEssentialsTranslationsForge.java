@@ -15,7 +15,6 @@ public class FTBEssentialsTranslationsForge {
         // project.
 
         // Use NeoForge to bootstrap the Common mod.
-        FTBEssentialsTranslations.LOG.info("Hello NeoForge world!");
         FTBEssentialsTranslations.init();
 
     }

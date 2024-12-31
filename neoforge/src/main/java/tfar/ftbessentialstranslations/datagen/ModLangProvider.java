@@ -41,6 +41,8 @@ public class ModLangProvider extends LanguageProvider {
         addTextComponent(TranslationKeys.CLICK_TO_TELEPORT,"Click to teleport");
         addTextComponent(TranslationKeys.unknownPlayer(""),"Unknown player: %s");
 
+        addTextComponent(TranslationKeys.NONE,"None");
+
         addTextComponent(TranslationKeys.COMMAND_TP_OFFLINE_PLAYER_ONLINE,"Player is online! Use regular /tp command instead");
         addTextComponent(TranslationKeys.offlineMove(UUID.randomUUID(), Vec3.ZERO, ResourceLocation.parse("s")),
                 "Offline player %s moved to [%s,%s,%s] in %s");

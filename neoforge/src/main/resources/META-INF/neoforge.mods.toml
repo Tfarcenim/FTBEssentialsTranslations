@@ -29,8 +29,8 @@ versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
 [[dependencies.${mod_id}]]
-modId="connector"
-type="incompatible" #mandatory (Can be one of "required", "optional", "incompatible" or "discouraged")
+modId="ftbessentials"
+type="required" #mandatory (Can be one of "required", "optional", "incompatible" or "discouraged")
 versionRange = "*"
 ordering = "NONE"
 side = "BOTH"
